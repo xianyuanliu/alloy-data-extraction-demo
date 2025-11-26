@@ -1,0 +1,18 @@
+[
+  {
+    "Alloy": "W0.33NbMoTa",
+    "Phase": "BCC"
+  },
+  {
+    "Alloy": "W0.53NbMoTa",
+    "Phase": "BCC"
+  },
+  {
+    "Alloy": "W0.16NbMoTa",
+    "Phase": "BCC"
+  },
+  {
+    "Alloy": "NbMoTa",
+    "Phase": "BCC"
+  }
+]

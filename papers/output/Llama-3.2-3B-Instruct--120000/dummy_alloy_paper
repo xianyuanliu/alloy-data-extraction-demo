@@ -1,0 +1,14 @@
+[
+  {
+    "Alloy": "FeCoNiCrMnTi",
+    "Phase": "FCC + HCP"
+  },
+  {
+    "Alloy": "FeCoNiCrMnAl",
+    "Phase": "FCC + B2"
+  },
+  {
+    "Alloy": "FeCoNiCrMnZr",
+    "Phase": "BCC"
+  }
+]
