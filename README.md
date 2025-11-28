@@ -8,11 +8,9 @@ Welcome to this demo repository for automatic extraction of alloy composition an
 - Applies an LLM to identify alloys and phases  
 - Outputs reviewable JSON data  
 
-Welcome to the GitHub repository for the session at the **TOTEMIC Training School 2025: "Tools for Energy Materials Modelling Acceleration"** on Extracting Alloy Data from PDF Files. This repository contains all the code, tools, and examples you’ll need to automatically extract alloy composition and phase information from scientific papers using **Nougat** and **LLMs (LLaMA via Hugging Face Transformers)**. All steps are designed to be run on **Google Colab**, making use of its free GPU resources.
-
 Everything runs in Google Colab (GPU-enabled) with guided cells for both non-coders and coders.
 
-This repository was used for the **TOTEMIC Training School 2025: ''Tools for Energy Materials Modelling Acceleration''**.
+This repository was used for the [**TOTEMIC Training School 2025: ''Tools for Energy Materials Modelling Acceleration''**](https://eu-mace.eu/event/4908:training-school-2025-totemic.html).
 
 ## Authors 
 
@@ -61,8 +59,8 @@ The papers will be downloaded when the code is run in Colab, so manual download 
 ---
 
 ### 2. Convert PDF to Raw Text
-- **Install Nougat** from GitHub (an open-source OCR-based tool for PDF parsing).
-- Run Nougat to convert PDFs to `.mmd` markdown files.
+- **Load Nougat pretrained model** from Hugging Face (an open-source OCR model for PDF parsing).
+- Use Nougat model to convert PDFs to `.mmd` markdown files.
 - **Preview extracted text** using `IPython.display` and compare it with the original PDF.
 - _Optional_: Open the `.mmd` markdown file to find which format the PDF is converted to.
 
@@ -81,13 +79,7 @@ The papers will be downloaded when the code is run in Colab, so manual download 
 
 ---
 
-### 5. Upgrade to Transformers v4.49.0
-- This specific version of Hugging Face Transformers is needed for compatibility with LLaMA models.
-- Runtime will **restart automatically** after installation.
-
----
-
-### 6. Extract Alloy and Phase Information
+### 5. Extract Alloy and Phase Information
 - Use a **LLaMA-based LLM** to extract structured data from `.mmd` files.
 - The model:
   - Identifies alloy compositions
@@ -96,13 +88,13 @@ The papers will be downloaded when the code is run in Colab, so manual download 
 
 ---
 
-### 7. Preview Extracted Data
+### 6. Preview Extracted Data
 - Load and display the structured JSON data of extracted alloy and phase information.
 - Easy to review in table or dictionary format.
 
 ---
 
-### 8. Utilities _(Optional)_
+### 7. Utilities _(Optional)_
 If you run into memory or performance issues:
 - **Free GPU Memory**: Clears unused variables and CUDA memory caches.
 - **Clear Cache**: Choose to clean Hugging Face and/or PyTorch caches. Otherwise, the caches will be stored in your account storage.
